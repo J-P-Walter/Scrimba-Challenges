@@ -4,3 +4,31 @@ body {
   place-content: center;
   background: hsl(230 35% 7%);
 }
+.outline {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgba(187, 187, 187, 0.151);
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.button {
+  height: 20rem;
+  width: 20rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 20rem;
+  font-size: 2rem;
+  transition: transform 0.5s;
+}
+
+.outline:hover .button {
+  transform: scale(0.7);
+}
+.outline:hover {
+  transform: scale(1.2);
+}
