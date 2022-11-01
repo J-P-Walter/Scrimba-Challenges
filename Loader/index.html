@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader" id="loader"></div>
+      <button id="btn" type="button" onclick="toggleButton()">Load</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  function toggleButton() {
+    if (
+      getComputedStyle(document.documentElement).getPropertyValue(
+        "--toggle"
+      ) === "0deg"
+    ) {
+      document.documentElement.style.setProperty("--toggle", "360deg");
+    } else {
+      document.documentElement.style.setProperty("--toggle", "0deg");
+    }
+  }
+</script>
